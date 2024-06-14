@@ -4,7 +4,7 @@ namespace MatchGame;
 
 public partial class GameOff : ContentPage
 {
-    //Declaramos una variable privada llamada stopwatch del tipo Stopwatch.
+    //Se declara una variable privada llamada stopwatch del tipo Stopwatch.
     //esta se utilizará para medir el tiempo de juego 
     private Stopwatch stopwatch;
 
@@ -34,7 +34,7 @@ public partial class GameOff : ContentPage
         "🐼","🐼",
     };
 
-        //Iniciamos un generador de números aleatorios llamado (Random) este barajara la lista de emojis utilizando
+        //Iniciamos un generador de números aleatorios llamado random este mezclara la lista de emoticones utilizando
         //el algoritmo de Fisher-Yates para obtener una distribución aleatoria.
         Random random = new Random();
         int n = animalEmoji.Count;
@@ -46,7 +46,7 @@ public partial class GameOff : ContentPage
             animalEmoji[k] = animalEmoji[n];
             animalEmoji[n] = value;
         }
-        //Asignamos emojis aleatorios a cada botón dentro del Grid. Seleccionamos un emoji aleatorio de la lista barajada
+        //Asignamos emoticones variados a cada botón dentro del Grid seleccionamos un emoticon aleatorio de la lista variada
         //y esta se eliminara de la lista para evitar duplicados.
         foreach (Button view in Grid1.Children)
         {
