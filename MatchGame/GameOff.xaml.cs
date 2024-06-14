@@ -21,7 +21,7 @@ public partial class GameOff : ContentPage
     private void SetUpGame()
     {
         List<String> animalEmoji = new List<String>()
-        //Definimos una lista de emojis de animales duplicados, lo que permite emparejar los emojis.
+        //Definimos una lista de emoticones de animales duplicados, lo que permite emparejar cada emoticon.
     {
         "😎","😎",
         "🐯","🐯",
